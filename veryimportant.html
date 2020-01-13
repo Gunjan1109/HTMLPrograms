@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+    .veryimportant{
+        background-color: blue;
+    }
+    h1.veryimportant.stuff{
+        background-color: brown;
+        color: darkgreen;
+    }
+    h1.stuff{
+        background-color: darkviolet;
+        color: white
+    }
+    .veryimportant{background-color: cornflowerblue}
+    .stuff{color: deeppink}
+    .veryimportant, .stuff{font-style: italic}
+    .veryimportant.stuff{text-decoration: underline}
+    </style>
+</head>
+<body>
+    <h1 class="veryimportant">Blue background</h1>
+    <h1 class="veryimportant dummy">Orange background</h1>
+    <h1 class="veryimportant stuff">brown background green text</h1>
+    <h1 class="dummy">Default</h1>
+    <h1 class="stuff">Violet background</h1>
+    <p class="veryimportant">This is first paragraph</p>
+    <p class="stuff">This is second paragraph</p>
+    <p class="veryimportant stuff">Both</p>
+</body>
+</html>

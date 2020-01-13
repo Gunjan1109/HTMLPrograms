@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <h1 style="color: brown">Form elements</h1>
+    <form action="#">
+        <fieldset>
+            <legend>Registration form</legend>
+            <table>
+
+                <tr>
+                    <td>Name </td>
+                    <td> <input type="text" placeholder="Name" autocomplete="on"></td>
+                </tr>
+                <tr>
+                    <td>Password</td>
+                    <td><input type="password" placeholder="Password" autocomplete="off" minlength="8"></td>
+                </tr>
+                <tr>
+                    <td>Email</td>
+                    <td><input type="email" placeholder="Email" autofocus></td>
+                </tr>
+                <tr>
+                    <td>Age</td>
+                    <td><input type="number" min="20" max="50"></td>
+                </tr>
+                <tr>
+                    <td>Number</td>
+                    <td><input type="text" placeholder="Number" pattern="[0-9]{10}"
+                            title="Only 0-9 and 10 numbers is allowed "></td>
+                </tr>
+                <tr>
+                    <td>Country</td>
+                    <td><input list="datalist">
+                        <datalist id="datalist">
+                            <option value="India"></option>
+                            <option value="China"></option>
+                            <option value="America"></option>
+                            <option value="Japan"></option>
+                            <option value="Russia"></option>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Colour</td>
+                    <td><input type="color"></td>
+                </tr>
+                <tr>
+                    <td>DOB</td>
+                    <td><input type="date"> </td>
+                      <td>  <input type="time"><input type="datetime-local"></td>
+                </tr>
+                <tr>
+                    <td>Range</td>
+                    <td><input type="range" name="rangei" value="2000" max="5000" min="1000" step="100" id="rangei"
+                            oninput="rangeo.value = rangei.value">
+                        <output name="rangeo" id="rangeo">2000</output> </td>
+                </tr>
+                <tr>
+                    <td>Message</td>
+                    <td><textarea name="Message" id="ta" cols="30" rows="10" placeholder="Message"></textarea></td>
+                </tr>
+                <tr>
+                    <td><button type="reset" value="reset">Reset</button></td>
+                    <td> <button type="submit" value="submit">Submit</button> </td>
+                </tr>
+
+            </table>
+        </fieldset>
+    </form>
+</body>
+
+</html>

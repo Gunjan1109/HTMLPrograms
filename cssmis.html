@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        p#abc::first-line {
+            color: blue;
+            font-size: xx-large;
+            text-decoration: underline;
+        }
+
+        p::before {
+            content: "***";
+        }
+
+        p::after {
+            content: "!!!!";
+        }
+    </style>
+</head>
+
+<body>
+    <p id="abc"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias laborum similique aspernatur
+        incidunt nam perferendis voluptas ex quis maxime et, id, accusamus commodi laudantium doloremque officia
+        voluptatum? Non, amet animi.</p>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi fugit obcaecati cum magnam nulla, saepe sed,
+        perspiciatis itaque dolorem, reiciendis unde molestiae! Libero veritatis commodi temporibus maiores earum ex
+        similique.</p>
+</body>
+
+</html>
